@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+        <head>
+            <title>Formulario</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-comatible" content="IE=edge"
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="css/estilo.css">
+            <script src="js/script.js"></script>
+        </head>
+        <body>
+            <h1>Formulário</h1>
+            <div>
+            <form name="frm" onsubmit="return validar()">
+                <label for="txtNome">Nome:</label>
+                <input type="txt" name="txtNome" id="txtNome" maxlength="50">
+
+                <label for="txtCpf">CPF:</label>
+                <input type="txt" name="txtCpf" id="txtCpf" maxlength="14"
+                onkeydown="return somenteNumero(event)">
+
+
+                <label for="txtTelefone">Telefone:</label>
+                <input type="txt" name="txtTelefone" id="txtTelefone"maxlength="10">
+
+                <label for="txtCEP">CEP:</label>
+                <input type="txt" name="txtCEP" id="txtCEP" maxlength="9">
+
+                <label for="txtPlaca">Placa</label>
+                <input type="txt" name="txtPlaca" id="txtPlaca" maxlength="8">
+
+                <input type="submit" value="Enviar">
+
+            </form>
+            </div>
+        </body>
+</html>
